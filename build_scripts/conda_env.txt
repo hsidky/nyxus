@@ -1,0 +1,12 @@
+pybind11>=2.9.0
+cmake>=3.20.1
+#gcc>=8.5.0
+#gxx>=8.5.0 -- just install compilers 
+libtiff>=4.3.0
+
+# OME Zarr dependencies. 
+z5py
+nlohmann_json
+xtensor
+
+cmake -DUSEGPU=OFF -DCMAKE_PREFIX_PATH=$CONDA_PREFIX ..
